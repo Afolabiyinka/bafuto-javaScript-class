@@ -77,7 +77,7 @@ const car = {
 };
 
 car.owner = "new owner";
-console.log(car);
+// console.log(car);
 
 let objectResult = car.name;
 // console.log(objectResult);
@@ -109,7 +109,7 @@ shopingItems[3] = false;
 // shopingitem.1[3]=false;
 
 shopingItems[5].name = "girl";
-console.log(shopingItems);
+// console.log(shopingItems);
 
 let userItem = {
   items: ["boy", "girl", "king", "queen"],
@@ -117,7 +117,7 @@ let userItem = {
 };
 userItem.items[3] = "king";
 
-console.log(userItem);
+// console.log(userItem);
 
 let useItems = ["man", "woman"];
 //  new useItems[1] ="me"
@@ -146,14 +146,14 @@ newItems[4].user = "james";
 
 function greetUser(val1, val2) {
   let greeeting = "you are welcome to" + " " + val2 + " " + val1;
-  console.log(greeeting);
+  // console.log(greeeting);
 }
 greetUser("ade", "bafuto");
 greetUser("yemi", "prtechfhjfj");
 
 function addFuction(value1, value2) {
   let result = value1 + value2;
-  console.log(result);
+  // console.log(result);
 }
 
 addFuction(10, 20);
@@ -200,7 +200,7 @@ const stepONE = "add flour";
 
 function task(callback) {
   setTimeout(() => {
-    console.log("");
+    // console.log("");
   }, [1000]);
 }
 
@@ -219,11 +219,11 @@ function random(value, value2) {
   let thirdResult = value2 / value;
   return thirdResult;
 }
-console.log(random(30, 10));
+// console.log(random(30, 10));
 // subtract();
 
 function greetUser(user) {
-  console.log(user);
+  // console.log(user);
 }
 
 greetUser("mr obi");
@@ -263,7 +263,7 @@ let steptwoo = "add noodles water";
 let stepthrees = "add seasoning water";
 
 function TaskOnee(callback) {
-  console.log(stepOnee);
+  // console.log(stepOnee);
   callback;
 }
 // number methods
@@ -298,7 +298,7 @@ function quadraticEquation(a, b, c) {
   return { positive, nagative };
 }
 let Result = quadraticEquation(1, 11, 24);
-console.log(Result);
+// console.log(Result);
 
 // template strings / literals
 
@@ -311,19 +311,19 @@ let naMe = "samson";
 let fullname = user + "" + naMe;
 let intro =
   "hello name is " + "1 + 1" + user + " " + naMe + " " + "i am a developer";
-console.log(intro);
+// console.log(intro);
 let firstName = "john";
 let lastnAME = "doe";
 let fullName = ` hello my name is ${firstName} ${lastnAME} i am a developer ${
   1 + 2 - 3
 }`;
-console.log(fullName);
+// console.log(fullName);
 
-console.log("hello world");
+// console.log("hello world");
 
 let log = {
   intoConsole: (value) => {
-    console.log(value);
+    // console.log(value);
   },
   sqrt: function (user) {
     let result = Math.sqrt(user);
@@ -335,7 +335,7 @@ let log = {
 let result = log.sqrt(25);
 let result2 = log.list[2];
 
-console.log(result2);
+// console.log(result2);
 
 // log.intoConsole("hello world");
 // arrow functions
@@ -345,17 +345,17 @@ function addNumber(value1, value2) {
   return result;
 }
 
-console.log(addNumber(2, 5));
+// console.log(addNumber(2, 5));
 
 let number = 10;
 number += 3;
 number++;
 number--;
-console.log(number);
+// console.log(number);
 let boy = "boy";
 boy += "boy boy";
 
-console.log(boy);
+// console.log(boy);
 
 let raisevalue = (value) => {
   return `hello what ever value you add here will increase by one ,this is your value :${
@@ -368,10 +368,111 @@ let raisevalue = (value) => {
 // switch case
 
 let object = "banana";
-console.log(raisevalue(20));
+// console.log(raisevalue(20));
 
 if (10 < 5) {
-  console.log("correct");
+  // console.log("correct");
 } else {
-  console.log("incorrect");
+  // console.log("incorrect");
 }
+// number method
+// conditionals if and the else
+
+// sting method / conditionals & switch cases
+
+function sackUser(user) {
+  return `sorry ${user} we no longer need your services `;
+}
+// console.log(sackUser("jerry"));
+
+const hireUser = (user) => {
+  return `hello ${user} you are hired!`;
+};
+
+// console.log(hireUser("jerry"));
+
+function initialsProcess(callback) {
+  // console.log("booting...");
+  callback();
+}
+function runProcess() {
+  // console.log("running...");
+}
+initialsProcess(() => {
+  runProcess();
+});
+// string method
+
+let val = "hello-my-name-is-james";
+// console.log(typeof val.toString());
+// console.log(isNaN(val)); checks if the argument is a number or not and returns a boolean based on the result
+
+// if (isNaN(20)) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+
+// console.log(typeof String(val));
+// console.log(typeof Number(val));
+
+// console.log(val.includes("jerry"));
+
+// console.log(val.lastIndexOf("m")); gives the index number of the character passed as an argument or parameter
+// console.log(val.indexOf("z"));
+
+// concat method adds to a string
+// val += " jerry";
+// console.log(val);
+
+// startsWith method
+
+// console.log(val.startsWith("J"));
+// console.log(val.endsWith("J"));
+// console.log(val.toLocaleLowerCase());
+// console.log(val.toLocaleUpperCase());
+
+// console.log(val.substring(0, 4)); plcks out characters based on the index being passed as argument
+
+// console.log(val.charAt(0)); gives the character based on the index in the prameter
+// console.log(val.trim()); removes whitespace form either the end or the beginnig of a string
+
+// console.log(val.concat(" doe")); joins strings together
+
+// val = [1, 2, 3, 4];
+// console.log(val.reverse());
+
+// console.log(val.replaceAll("-", " "));
+// conditionals
+
+//  
+// if (namE === "isreal") {
+//   console.log("correct");
+// } else if (namE === "obi") {
+//   console.log("the name is now obi");
+// } else if (namE === "jerimaiah") {
+//   console.log("the name is now jerimaiah");
+// } else {
+//   console.log("incorrect");
+// }
+
+// let ranDom = Math.floor(Math.random() * 25);
+// console.log(ranDom);
+// if (ranDom > 18 && ranDom < 20) {
+//   console.log("you can apply for the programme");
+// console.log("good")
+// } else {
+//   console.log("sorry you can't be accepted to participate in this programme");
+// }
+// if (ranDom > 18 || ranDom < 20) {
+//   console.log("you can apply for the programme");
+// } else {
+//   console.log("sorry you can't be accepted to participate in this programme");
+// }
+
+// let test = "banana";
+
+// tenary;
+// test !== "orange" ? console.log("correct") : console.log("incorrect");
+
+// git pull origin main
