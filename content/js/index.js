@@ -159,41 +159,41 @@ function addFuction(value1, value2) {
 addFuction(10, 20);
 addFuction(100, 20);
 
-// const promise = new Promise((resolve, reject) => {
-//   let ready = false;
+const promise = new Promise((resolve, reject) => {
+  let ready = false;
 
-//   setTimeout(() => {
-//     if (ready) {
-//       resolve("you are ready");
-//     } else {
-//       resolve("you are ready");
-//     }
-//   }, 2000);
-// })
-//   .then((value) => {
-//     console.log(value);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+  setTimeout(() => {
+    if (ready) {
+      resolve("you are ready");
+    } else {
+      resolve("you are ready");
+    }
+  }, 2000);
+})
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const secondPromise = new Promise((resolve, reject) => {
-//   let ready = false;
+const secondPromise = new Promise((resolve, reject) => {
+  let ready = false;
 
-//   setTimeout(() => {
-//     if (ready) {
-//       resolve("resolve ready");
-//     } else {
-//       reject("resolve not  ready");
-//     }
-//   }, 1000);
-// })
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+  setTimeout(() => {
+    if (ready) {
+      resolve("resolve ready");
+    } else {
+      reject("resolve not  ready");
+    }
+  }, 1000);
+})
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 // bake a cake
 const stepONE = "add flour";
@@ -476,3 +476,6 @@ let val = "hello-my-name-is-james";
 // test !== "orange" ? console.log("correct") : console.log("incorrect");
 
 // git pull origin main
+
+
+console.log("Hello world")
